@@ -3,7 +3,7 @@
   "name": "Lazy CUHK: Internet",
   "short_name": "LazyCUHKInternet",
   "description": "Automatic login to CUHK internet services, both WiFi and wired network(unofficial)",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "permissions": [
     "storage"
   ],

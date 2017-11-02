@@ -1,0 +1,22 @@
+{
+  "manifest_version": 2,
+  "name": "Lazy CUHK - Internet",
+  "short_name": "LazyCUHKInternet",
+  "description": "Automatic login to CUHK internet services, both WiFi and wired network(unofficial)",
+  "version": "0.1.0",
+  "permissions": [
+    "storage"
+  ],
+  "options_page": "options/options.html",
+  "content_scripts": [{
+    "matches": [
+      "*://securelogin.net.cuhk.edu.hk/*",
+      "*://securelogin.wlan.cuhk.edu.hk/*"
+    ],
+    "js": [
+      "content-scripts/accept-policy.js",
+      "content-scripts/submit-login-form.js",
+      "content-scripts/redirect.js"
+    ]
+  }]
+}
